@@ -21,7 +21,7 @@ $(document).ready(function(){
         results += i + ", ";
       }
     }
-    return results;
+    return results.slice(0, results.length -2);    // this removes the space and comma at last index
   }
 
 

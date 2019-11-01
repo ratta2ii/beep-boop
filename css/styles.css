@@ -1,7 +1,27 @@
+
 body {
-  background-color: cornflowerblue;
+  background-image: url("../img/back7.jpg");
+  background-size: cover;
+  /* repeat: no-repeat; */
+}
+
+.header-div {
+  color: white;
+  text-align: center;
+  width: 50%;
+  background-color: #26DA00;
+  border-radius: 100px;
+  padding: 50px;
+  margin: 50px auto;
+}
+
+h1 {
+  font-size: 3.5em;
+  text-align: center;
 }
 
 .results {
   display: none;
+  border: 5px solid black;
+  font-weight: bold;
 }
