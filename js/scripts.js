@@ -6,7 +6,7 @@ $(document).ready(function(){
     for (var i = 0; i <= number; i++){
       i += "";
       if (i === "0"){
-        results += '"0", ';       // Example in instructions has 0 in quotes in addition to strings
+        results += '"0", ';
       }
       else if (i.includes(3) === true){
         results += '"I\'m sorry, Dave. I\'m afraid I can\'t do that.", ';
@@ -21,10 +21,9 @@ $(document).ready(function(){
         results += i + ", ";
       }
     }
-    return results.slice(0, results.length -2);    // this removes the space and comma at last index
+    return results.slice(0, results.length -2);
   }
-
-
+  
 
   $("#form-1").submit(function(event){
     event.preventDefault();
