@@ -1,37 +1,45 @@
 $(document).ready(function(){
 
-  var results = "";
-
   function translator(number){
-    for (var i = 0; i <= number; i++){
-      i += "";
-      if (i.includes(3) == true){
-        results += '"I\'m sorry, Dave. I\'m afraid I can\'t do that.", ';
-      }
-      else if (i.includes(2) == true){
-        results += '"Boop!", ';
-      }
-      else if (i.includes(1) == true){
-        results += '"Beep!", ';
-      }
-      else {
-        results += i + ", ";
-      }
+    for (var i = number; i >= 0; i--){
+
     }
-    return results;
-  }
+    return number;
+  }                               // Closing brace for Function translator
+
+
+
+
+
 
 
 
   $("#form-1").submit(function(event){
     event.preventDefault();
 
+
+
+
     var userInput = $("#form-field").val();
 
-    $("#results-text").empty().append(translator(userInput));
+
+
+
+    $("#results-text").empty().append(translator(userInput));     // add translator function output
     $(".results").show();
 
-    results = "";
+
+
+
 
   });   // Closing brace for form // ERASE ME!!!!!
+
 });
+
+
+
+
+
+console.log("Tester line. make sure to erase me from within project -wherever I am!")
+
+var testString = "I am a tester - to be erased later";
