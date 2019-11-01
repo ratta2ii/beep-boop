@@ -4,8 +4,12 @@ $(document).ready(function(){
     for (var i = number; i >= 0; i--){
 
     }
+    return number;
+  }                               // Closing brace for Function translator
 
-  }    // Closing brace for Function translator
+
+
+
 
 
 
@@ -13,14 +17,29 @@ $(document).ready(function(){
   $("#form-1").submit(function(event){
     event.preventDefault();
 
+
+
+
     var userInput = $("#form-field").val();
 
 
-    $("#results-text").text();     // add translator function output here
+
+
+    $("#results-text").empty().append(translator(userInput));     // add translator function output
     $(".results").show();
 
 
 
-  });   //End of form
+
+
+  });   // Closing brace for form // ERASE ME!!!!!
 
 });
+
+
+
+
+
+console.log("Tester line. make sure to erase me from within project -wherever I am!")
+
+var testString = "I am a tester - to be erased later";
