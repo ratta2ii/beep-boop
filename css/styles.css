@@ -2,27 +2,37 @@
 body {
   background-color: rgb(59,219,233);
   background-image: url("../img/back7copy.jpg");
-  background-size: cover;
-  padding: 75px 50px 150px 300px;
+  background-size: auto;
+
 }
 
-.jumbotron {
+.jumbo-container {
+  width: 80%;
+  margin: 75px auto;
+
+}
+
+.jumbo-extra {
+  -webkit-box-shadow: 2px 2px 15px 9px #000000;
+  box-shadow: 2px 2px 15px 9px rgb(59,219,233);
   border: 3px solid rgb(33, 150, 189);
   background: rgb(7,43,45);
   background: rgb(0,0,0);
   background: linear-gradient(31deg, rgba(0,0,0,0.9836309523809523) 34%, rgba(59,219,233,0.8169642857142857) 100%);
-  width: 50%;
   color: ghostwhite;
+  border-radius: 5px;
+  margin: 0 auto;
 }
 
 .form-container {
-  -webkit-box-shadow: 5px 5px 23px 5px #000000;
-  box-shadow: 5px 5px 23px 5px #000000;
+  -webkit-box-shadow: 2px 2px 15px 9px #000000;
+  box-shadow: 2px 2px 15px 9px rgb(59,219,233);
   background-color: rgb(172, 83, 108);
   border: 3px solid rgb(33, 150, 189);
-  padding: 50px;
-  width: 40%;
-  margin-top: 25px;
+  padding: 40px;
+  border-radius: 5px;
+  width: 75%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -33,6 +43,8 @@ h1 {
 h3 {
   color: ghostwhite;
   margin-bottom: 30px;
+  font-weight: 600;
+
 }
 
 .results {
@@ -47,4 +59,63 @@ button {
   background-color: #8b19eb;
   color: whitesmoke;
   font-size: 2.5em;
+}
+
+
+
+
+ @media screen and (min-width: 800px){
+
+     body {
+       background-size: cover;
+     }
+
+    .jumbo-extra {
+      width: 70%;
+    }
+
+    .form-container {
+      width: 55%;
+    }
+}
+
+
+
+ @media screen and (min-width: 1000px){
+
+   body {
+     background-size: cover;
+   }
+
+    .jumbo-extra {
+      width: 60%;
+    }
+
+    .jumbo-container {
+      margin: 100px;
+    }
+
+    .form-container {
+      width: 45%;
+    }
+}
+
+ @media screen and (min-width: 1335px){
+
+   body {
+     background-size: cover;
+   }
+
+    .jumbo-extra {
+      width: 48%;
+    }
+
+    .jumbo-container {
+        margin: 100px;
+    }
+
+    .form-container {
+      width: 35%;
+      margin-left: 700px;
+    }
 }
