@@ -62,8 +62,6 @@ button {
 }
 
 
-
-
  @media screen and (min-width: 800px){
 
      body {
@@ -83,10 +81,6 @@ button {
 
  @media screen and (min-width: 1000px){
 
-   body {
-     background-size: cover;
-   }
-
     .jumbo-extra {
       width: 60%;
     }
@@ -102,16 +96,8 @@ button {
 
  @media screen and (min-width: 1335px){
 
-   body {
-     background-size: cover;
-   }
-
     .jumbo-extra {
       width: 48%;
-    }
-
-    .jumbo-container {
-        margin: 100px;
     }
 
     .form-container {
